@@ -1,5 +1,14 @@
 # Bulk Edit Changelog
 
+## 5.0.0-beta.1 - 2024-09-26
+
+> [!IMPORTANT]
+> Craft 5 had signficant chagnes to how fields and content work. Please use this beta with caution, make backups, and report any issues you encounter.
+
+### Added
+
+- Initial Craft 5 support.
+
 ## 4.0.1 - 2022-10-28
 
 ### Fixed

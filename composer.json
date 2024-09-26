@@ -10,7 +10,7 @@
         "bulk edit"
     ],
     "support": {
-        "docs": "https://github.com/venveo/craft-bulkedit/blob/master/README.md",
+        "docs": "https://github.com/venveo/craft-bulkedit/blob/main/README.md",
         "issues": "https://github.com/venveo/craft-bulkedit/issues"
     },
     "license": "MIT",
@@ -21,8 +21,8 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^5.0.0-beta.1",
-        "php": "^8.0.2"
+        "craftcms/cms": "^5.0",
+        "php": "^8.2"
     },
     "require-dev": {
         "craftcms/phpstan": "dev-main",
@@ -34,16 +34,18 @@
           "venveo\\bulkedit\\": "src/"
         }
     },
+    "scripts": {
+        "phpstan": "phpstan --ansi --memory-limit=1G",
+        "check-cs": "ecs check --ansi",
+        "fix-cs": "ecs check --fix --ansi"
+    },
     "extra": {
         "name": "Bulk Edit",
         "handle": "venveo-bulk-edit",
-        "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-bulkedit/master/CHANGELOG.md"
+        "changelogUrl": "https://raw.githubusercontent.com/venveo/craft-bulkedit/main/CHANGELOG.md"
     },
     "config": {
         "sort-packages": true,
-        "platform": {
-            "php": "8.0.2"
-        },
         "allow-plugins": {
             "yiisoft/yii2-composer": true,
             "craftcms/plugin-installer": true
